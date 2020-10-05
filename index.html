@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+
+    <form id="form" class="myForm" onsubmit="calculateDogYears(); return false">
+      <div class="row">
+        <div class="column">
+          <h1>Dog Year Calculator</h1>
+
+
+          <div class="input-group">
+            <label for="first name">First Name </label>
+            <input name="name" type="text" id="fname" required>
+          </div>
+          <div class="input-group">
+            <label for="age">Age of animal</label>
+            <input name="age" type="number" id="animal-age" required>
+          </div>
+          <div class="input-group">
+            <label for="animal">Animal</label>
+            <select name="animal" id="animal" required>
+              <option value="" selected="selected">Select One</option>
+              <option value="cat">Cat</option>
+              <option value="dog">Dog</option>
+
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="animal-size">Size of animal</label>
+            <select name="size" id="size" required>
+              <option value="" selected="selected">Select One</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="giant">Giant</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <button id="submit">Calculate</button>
+
+      </div>
+      <div id="total-years" class="hidden">
+        <p><span id="animal-years"></span></p>
+      </div>
+    </form>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
